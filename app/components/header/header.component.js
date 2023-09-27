@@ -6,7 +6,7 @@ template.innerHTML = `
             <img class="logo" src="../../../assets/logo/logo.svg" alt="Logo EasyCarros">
         </section>
     </header>
-    <link rel="stylesheet" href="./components/header/header.component.css">
+    <link rel="stylesheet" href="./app/components/header/header.component.css">
 `
 
 class HeaderComponent extends HTMLElement {
