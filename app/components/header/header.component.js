@@ -2,11 +2,31 @@
 const template = document.createElement('template')
 template.innerHTML = `
     <header>
-        <section class="container">
-            <img class="logo" src="../../../assets/logo/logo.svg" alt="Logo EasyCarros">
+        <section class="header_container">
+            <img class="header_logo" src="../../../assets/logo/logo.svg" alt="Logo EasyCarros">
         </section>
     </header>
-    <link rel="stylesheet" href="./app/components/header/header.component.css">
+    <style>
+        .header_container{
+            position: absolute;
+            display: block;
+            z-index: 10000;
+            width: 100%;
+            height: 58px;
+            top: 0px;
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 0px 10px 10px;
+        }
+        
+        .header_logo{
+            padding-left: 22px;
+            width: 91.54px;
+            height: 52.73px;
+            object-fit: contain;
+        }
+    </style>
 `
 
 class HeaderComponent extends HTMLElement {
