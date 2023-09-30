@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Locação</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./rental.css">
+    </head>
+    <body>
+        <easy-header></easy-header>
+        <section class="container">
+            <div class="car_info">
+                <img src="../../../assets/car/car.svg" alt="Imagem de carro">
+                <div class="car_details">
+                    <h2>Volkswagen T-Cross</h2>
+                    <h2>BEG7P09</h2>
+                    <hr>
+                    <span>Automático</span>
+                </div>
+                <div class="address_details">
+                    <i class="fa-solid fa-building fa-xl"></i>
+                    <span>R.Nilza, 850 Vila Esperança, São Paulo – SP - 03651120</span>
+                </div>
+            </div>
+            <div class="rental_info">
+                <div class="rental_time">
+                    <span>Tempo de locação</span>
+                    <div class="time_container">
+                        <div>
+                            <div class="time_buttons_div">
+                                <button onclick="updateCounter('days', 'decrease')" type="button" class="btn btn-secondary minus_button">-</button>
+                                <span id="days"></span>
+                                <button onclick="updateCounter('days', 'increase')" type="button" class="btn btn-primary plus_button">+</button>
+                            </div>
+                            <span class="days_or_hours">Dia(s)</span>
+                        </div>
+                        <div>
+                            <div class="time_buttons_div">
+                                <button onclick="updateCounter('hours', 'decrease')" type="button" class="btn btn-secondary minus_button">-</button>
+                                <span id="hours"></span>
+                                <button onclick="updateCounter('hours', 'increase')" type="button" class="btn btn-primary plus_button">+</button>
+                            </div>
+                            <span class="days_or_hours">Hora(s)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rental_price">
+                    <div class="rental_price_per_hour">
+                        R$ 23,00 <span>/hora</span>
+                    </div>
+                    <div class="rental_price_disclaimer">
+                        + R$ 0,80 /km rodado
+                    </div>
+                </div>
+            </div>
+        </section>
+        <easy-button button-text="PROSSEGUIR"></easy-button>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./rental.js"></script>
+    <script type="module" src="../../components/header/header.component.js" crossorigin="anonymous"></script>
+    <script type="module" src="../../components/button/button.component.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d122fde37.js" crossorigin="anonymous"></script>
+</html>

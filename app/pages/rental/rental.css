@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+hr{
+    color: rgba(0, 0, 0, 0.08);
+    opacity: 1;
+    margin: 1px;
+}
+
+.container{
+    font-family: 'Inter', sans-serif;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 428px;
+    height: 100vh;
+}
+
+.car_info{
+    max-width: 310px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 36px;
+}
+
+.car_details{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.42);
+    max-width: 300px;
+}
+
+.car_details > h2{
+    font-size: 15px;
+}
+
+.car_details > h2:first-of-type{
+    color: #3861D3;
+    -webkit-text-stroke: 1px #3861D3;
+}
+
+.car_details > h2:nth-of-type(2){
+    margin-bottom: 0;
+}
+
+.car_details > span{
+    font-size: 10px;
+}
+
+.address_details{
+    display: flex;
+    color: rgba(0, 0, 0, 0.42);
+    max-width: 310px;
+}
+
+.address_details > i {
+    padding-top: 6px;
+}
+
+.address_details > span {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 0 8px;
+    margin-left: 8px;
+    font-size: 10px;
+    text-wrap: wrap;
+    max-width: 260px;
+}
+
+.rental_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 390px;
+}
+
+.rental_time {
+    background-color: rgba(217, 217, 217, 0.28);
+    width: 384px;
+    height: 127;
+    padding: 6px 15px;
+    margin-bottom: 28px;
+}
+
+.rental_time > span{
+    color: #3861D3;
+    font-size: 12px;
+}
+
+.time_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time_container > div{
+    font-size: 12px;
+}
+
+.time_buttons_div {
+    background-color: white;
+    margin-top: 24px;
+    width: 162px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 4px;
+}
+
+.minus_button, .plus_button {
+    line-height: 0;
+    padding: 0px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.minus_button{
+    padding-bottom: 2px;
+}
+
+.plus_button{
+    padding-bottom: 2.5px;
+}
+
+#days{
+    color: rgba(0, 0, 0, 0.54);
+}
+
+#hours{
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.days_or_hours{
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.53);
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.rental_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.rental_price_per_hour{
+    color: #3861D3;
+    font-size: 32px;
+    -webkit-text-stroke: 1px #3861D3;
+}
+
+.rental_price_per_hour > span{
+    font-size: 20px;
+}
+
+.rental_price_disclaimer{
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 10px;
+}
+
+@media (max-width: 429px){
+    .container{
+        width: 100vw;
+    }
+    .rental_info {
+        transform: scale(0.9); /* Equal to scaleX(2) scaleY(0.5) */
+        transform-origin: top center;
+    }
+}
