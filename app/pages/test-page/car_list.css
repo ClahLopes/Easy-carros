@@ -84,23 +84,6 @@ body {
   flex-direction: column;
 }
 
-.div_search {
-  display: flex;
-  width: 30%;
-  height: 30px;
-  border-radius: 10px;
-  background: #D9D9D9;
-  justify-content: end;
-  align-items: center;
-}
-
-.div_search > input {
-  background-color: transparent;
-  border-color: transparent;
-  outline: none;
-  padding-left: 10px ;
-  width: 100%;
-}
 
 .icone {
   padding-right: 10px;
