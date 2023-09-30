@@ -1,0 +1,13 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(217, 217, 217, 0.35);
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  gap:20px;
+}
