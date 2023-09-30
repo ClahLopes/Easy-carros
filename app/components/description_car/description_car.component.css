@@ -1,17 +1,26 @@
 body { 
   font-family: 'Inter', sans-serif;
-  background-color: red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.container{
+.box_car{
   display: flex;
   background: #FFFFFF;
   width: 50%;
-  height: 120px;
+  height: 130px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.box_car:hover {
+  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.1);
 }
 
 .car {
-  padding: 22px;
+  padding: 10px;
 }
 
 .logo{
@@ -38,4 +47,21 @@ body {
 .adress {
   font-size: 10px;
   color: rgba(0, 0, 0, 0.72);
+}
+
+.div_local {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#icon {
+  border: 2px solid #000;
+  border-radius: 100% ;
+  padding: 5.5px 10px;
+}
+
+.div_icon {
+  display: flex;
+  align-self: flex-start;
 }
