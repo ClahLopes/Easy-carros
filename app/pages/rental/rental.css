@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+html{
+    overflow-x: hidden;
+}
+
 hr{
     color: rgba(0, 0, 0, 0.08);
     opacity: 1;
