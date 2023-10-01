@@ -18,9 +18,22 @@ function updateCounter(counter, typeOfUpdate) {
     }else{
         if(typeOfUpdate === 'increase'){
             hoursCounter += 1
+            
+            if(hoursCounter == 24){
+                hoursCounter = 0
+                daysCounter += 1
+            }
         } else{
-            if(hoursCounter > 0)
-                hoursCounter -= 1
+            hoursCounter -= 1
+
+            if(hoursCounter < 0){
+                if(daysCounter > 0){
+                    hoursCounter = 23
+                    daysCounter -= 1
+                } else {
+                    hoursCounter = 0
+                }
+            }
         }
     }
 

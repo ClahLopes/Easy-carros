@@ -1,0 +1,130 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(217, 217, 217, 0.35);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.box_car{
+  display: flex;
+  background: #FFFFFF;
+  width: 50%;
+  height: 130px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.box_car:hover {
+  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.car {
+  padding: 10px;
+}
+
+.logo{
+  padding-left: 22px;
+  width: 91.54px;
+  height: 52.73px;
+}
+
+.name_car {
+  font-size: 15px;
+  color: #3861D3;
+  -webkit-text-stroke: 1px #3861D3
+}
+
+.plate_car {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.status_car {
+  font-size: 10px;
+  color: #1A7E28;
+}
+
+.adress {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.div_local {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#icon {
+  border: 2px solid #000;
+  border-radius: 100% ;
+  padding: 5.5px 10px;
+}
+
+.div_icon {
+  display: flex;
+  align-self: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+
+.icone {
+  padding-right: 10px;
+}
+
+#status_negativo{
+  color: #FF0000;
+}
+
+#car4 {
+  margin-left: -10px;
+  padding: 0px;
+}
+
+@media (max-width: 768px){
+  .container{
+    width: 100vw;
+    align-items: center;
+  }
+
+  .conteudo {
+    width: 100%;
+  }
+
+  .div_search{
+    width: 100%;
+  }
+  .box_car {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 363px) {
+  .box_car {
+    transform: scale(0.9); /* Equal to scaleX(2) scaleY(0.5) */
+    transform-origin: top center;
+}
+
+.info_car {
+  transform: scale(0.9); /* Equal to scaleX(2) scaleY(0.5) */
+  transform-origin: top center;
+}
+}
