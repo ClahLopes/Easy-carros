@@ -17,7 +17,7 @@ class ParkingComponent extends HTMLElement {
               <div class="icone">
                 <img class="img_predio" src="../../../assets/predio.png" alt="Logo EasyCarros">
               </div>
-              <div class="info-parking">
+              <div class="info_parking">
                   <h1 class="title_address"></h2>
                   <h2 class="hours">Horário de Funcionamento</h2>
                   <h2 class="week">
@@ -74,7 +74,10 @@ class ParkingComponent extends HTMLElement {
               .list_parking {
                 display: flex;
                 width: 100%;
+              }
 
+              .info_parking{
+                width: 200px;
               }
 
               .conteudo {
@@ -86,6 +89,7 @@ class ParkingComponent extends HTMLElement {
               }
               .box_parking {
                 width: 100%;
+                padding: 20px 20px;
               } 
 
             }
