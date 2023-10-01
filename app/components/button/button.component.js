@@ -45,6 +45,9 @@ class ButtonComponent extends HTMLElement {
 
         const button = section.querySelector('button')
         button.textContent = this.getAttribute('button-text')
+        button.onclick = () => {
+            return window.location.href = this.getAttribute('route')
+        }
 
         shadow.appendChild(section)
     }

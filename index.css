@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 80px;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+.container > h1 {
+    color: #3861D3;
+    -webkit-text-stroke: 1px #3861D3;
+}

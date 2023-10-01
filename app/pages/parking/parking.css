@@ -11,3 +11,12 @@ body {
   margin-top: 100px;
   gap:20px;
 }
+
+.clickable {
+  cursor: pointer;
+  transition: all ease-in-out .25s;
+}
+
+.clickable:hover {
+  scale: 1.1;
+}

@@ -6,6 +6,15 @@ body {
   display: flex;
 }
 
+.clickable {
+  cursor: pointer;
+  transition: all ease-in-out .25s;
+}
+
+.clickable:hover {
+  scale: 1.1;
+}
+
 .box_car{
   display: flex;
   background: #FFFFFF;
